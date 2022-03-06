@@ -23,9 +23,12 @@ Generate a report that contains any issue or warnings that were encountered such
 talend_type = {
     "CHAR": "id_String",
     "VARCHAR": "id_String",
+    "CLOB": "id_String",
+    "JSON": "id_String",
+    "SMALLINT": "id_Integer",
     "INTEGER": "id_Integer",
-    "DECIMAL": "id_Float",
     "BIGINT": "id_Integer",
+    "DECIMAL": "id_Float",
     "DATE": "id_Date",
     "TIMESTAMP": "id_String"
 }
@@ -49,7 +52,7 @@ def get_column_type_size(column_data):
 def generate_xml(column_list, xml_file):
     """
     Generate XML for Talend based on the column names and data types provided. Must be in a list format
-    [COL_NAME, DATA_TYPE].
+    [COL_NAME, DATA_TYPE_SIZE].
     :param column_list: A list of column names and data types.
     :param xml_file: The path to the XML output file.
     :return: Status of XML generation.
