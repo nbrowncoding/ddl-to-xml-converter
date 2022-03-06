@@ -1,6 +1,6 @@
 # Teradata DDL to Talend XML Converter
 
-A simple python scipt that takes a Teradata DDL and converts the DDL to an XML format that can be imported into Talend Open Studio.
+A simple python scipt that takes a Teradata DDL and converts the DDL into an XML format that can be imported as metadata into Talend Open Studio. I created project to save time when attempting to build large table schemas in Talend. Since manually adding and defining columns took too long, I wrote this program to automatically do it for me.
 
 ## Supported Software Versions
 Teradata 16.20+
